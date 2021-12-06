@@ -36,7 +36,7 @@ public class TreeHashMapDemo {
 
         System.out.println("==================Iterating TreeMap======================================");
         for (String animalKey:animal.keySet()) {
-            System.out.println("Animals:"+ animalKey +" and  Fight Number:"+animal.get(animalKey));
+            System.out.println("Animals:"+ animalKey +" and  Animal Number:"+animal.get(animalKey));
 
         }
         System.out.println("-------------------------------Thank you --------------------------------------------------");
