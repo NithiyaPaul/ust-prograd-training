@@ -7,7 +7,7 @@ class EmployeeRecords
     {
         // Create or Modify a file for Database
         PrintWriter pw = new PrintWriter(new BufferedWriter(new
-                FileWriter("studentRecords.txt",true)));
+                FileWriter("employeeRecords.txt",true)));
         String name, phone, dname, eid, address, dob;
         int age;
         long telephoneNo;
