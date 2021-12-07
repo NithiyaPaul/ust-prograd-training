@@ -2,6 +2,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
+import java.text.DecimalFormat;
+
 public class RectangleTest {
     @Nested
     class TestingAreaFunction{
@@ -32,7 +34,7 @@ public class RectangleTest {
     @Nested
     class TestingPerimeterFunction{
         @Test
-        public void perimeterOfLengthTenAndBreadthFiveIsFifty(){
+        public void perimeterOfLengthTenAndBreadthFiveIsThirty(){
             Rectangle ar = new Rectangle(10,5);
             double area = ar.perimeter();
             double exp = 30;
@@ -48,10 +50,11 @@ public class RectangleTest {
 
         @Test
         public void verifyPerimeterForDecimalMeasurements(){
-            Rectangle ar = new Rectangle(2.3,4.5);
+            Rectangle ar = new Rectangle(5.4,3.2);
+            DecimalFormat df = new DecimalFormat("#.#");
             double area = ar.perimeter();
-            double exp = 13.6;
-            Assertions.assertEquals(area,exp);
+            double exp = 17.2;
+            Assertions.assertEquals(df.format(area),df.format(exp));
         }
     }
 }
