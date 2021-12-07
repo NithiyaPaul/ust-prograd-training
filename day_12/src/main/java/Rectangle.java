@@ -30,4 +30,7 @@ public class Rectangle {
     public double area() {
         return length * width;
     }
+    public double perimeter() {
+        return 2*(length + width);
+    }
 }
