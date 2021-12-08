@@ -1,4 +1,4 @@
-public class Rectangle {
+class Rectangle {
     private double length,width;
     Rectangle(double length, double width){
         setLength(length);

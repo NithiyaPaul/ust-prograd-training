@@ -1,59 +1,61 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
+
 import java.text.DecimalFormat;
 
-public class RectangleTest {
+import static org.junit.jupiter.api.Assertions.*;
+
+class SquareTest {
     @Nested
     class TestingAreaFunction{
         @Test
-        public void areaOfLengthTenAndBreadthFiveIsFifty(){
-            Rectangle ar = new Rectangle(10,5);
+        public void areaOfSideFiveISTwentyFive(){
+            Square ar = new Square(5);
             double area = ar.area();
-            double exp = 50;
+            double exp = 25;
             Assertions.assertEquals(area,exp);
         }
         @Test
         public void throwExceptionWhenMeasurementsBecomeNegativeOrZero(){
             Assertions.assertThrows(IllegalArgumentException.class, () -> {
-            Rectangle ar = new Rectangle(-2,-4);
+                Square ar = new Square(-2);
                 ar.area();
             });
         }
 
         @Test
         public void verifyAreaForDecimalMeasurements(){
-            Rectangle ar = new Rectangle(6.5,5);
+            Rectangle ar = new Square(6.5);
             double area = ar.area();
-            double exp = 32.5;
+            double exp = 42.25;
             Assertions.assertEquals(area,exp);
         }
     }
-
     @Nested
     class TestingPerimeterFunction{
         @Test
-        public void perimeterOfLengthTenAndBreadthFiveIsThirty(){
-            Rectangle ar = new Rectangle(10,5);
-            double area = ar.perimeter();
-            double exp = 30;
-            Assertions.assertEquals(area,exp);
+        public void perimeterOfSideFiveISTwenty(){
+            Square ar = new Square(5);
+            double perimeter = ar.perimeter();
+            double exp = 20;
+            Assertions.assertEquals(perimeter,exp);
         }
         @Test
         public void throwExceptionWhenMeasurementsBecomeNegativeOrZero(){
             Assertions.assertThrows(IllegalArgumentException.class, () -> {
-                Rectangle ar = new Rectangle(-2,-4);
+                Square ar = new Square(-2);
                 ar.perimeter();
             });
         }
 
         @Test
-        public void verifyPerimeterForDecimalMeasurements(){
-            Rectangle ar = new Rectangle(5.4,3.2);
-            DecimalFormat df = new DecimalFormat("#.#");
-            double area = ar.perimeter();
-            double exp = 17.2;
-            Assertions.assertEquals(df.format(area),df.format(exp));
+        public void verifyAreaForDecimalMeasurements(){
+            Rectangle ar = new Square(10.25);
+            double perimeter = ar.perimeter();
+            double exp = 41;
+            Assertions.assertEquals(perimeter,exp);
         }
     }
+
 }
