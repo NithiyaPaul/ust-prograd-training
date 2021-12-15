@@ -222,6 +222,7 @@ public class Main {
                     break;
                 case 6:
                     i = 1;
+                    break;
                 default:
                     throw new IllegalArgumentException("Make sure selected currency is valid");
             }
