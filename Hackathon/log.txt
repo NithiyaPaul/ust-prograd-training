@@ -1,0 +1,12 @@
+-----------------Currency Converting from INR to POUND-----------------------------
+Currency chosen by the user => INR
+Currency converted by the user => POUND
+User entered Amount => 400.0
+Converted Amount => 3.96
+-----------------------Thank You------------------------------------
+-----------------Currency Converting from EURO to SWISS FRANC-----------------------------
+Currency chosen by the user => EURO
+Currency converted by the user => SWISS FRANC
+User entered Amount => 20.0
+Converted Amount => 20.8
+-----------------------Thank You------------------------------------
