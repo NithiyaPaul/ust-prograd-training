@@ -10,3 +10,9 @@ Currency converted by the user => SWISS FRANC
 User entered Amount => 20.0
 Converted Amount => 20.8
 -----------------------Thank You------------------------------------
+-----------------Currency Converting from DOLLAR to POUND-----------------------------
+Currency chosen by the user => DOLLAR
+Currency converted by the user => POUND
+User entered Amount => 5.0
+Converted Amount => 3.8
+-----------------------Thank You------------------------------------

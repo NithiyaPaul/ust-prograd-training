@@ -39,10 +39,10 @@ public class Main {
             System.out.println("From which currency You want to Convert ?");
             System.out.println(" 1.RUPEE\n 2.DOLLAR\n 3.POUND\n 4.EURO\n 5.SWISS FRANC\n 6.EXIT");
             fromCurrency = sc.nextInt();
-            System.out.println("How much Money you want to convert ?");
-            amount = sc.nextFloat();
             switch (fromCurrency) {
                 case 1:
+                    System.out.println("How much Money you want to convert ?");
+                    amount = sc.nextFloat();
                     System.out.println("To which currency You want to Convert ?");
                     System.out.println(" 1.RUPEE\n 2.DOLLAR\n 3.POUND\n 4.EURO\n 5.SWISS FRANC");
                     toCurrency = sc.nextInt();
@@ -77,6 +77,8 @@ public class Main {
                     }
                     break;
                 case 2:
+                    System.out.println("How much Money you want to convert ?");
+                    amount = sc.nextFloat();
                     System.out.println("To which currency You want to Convert ?");
                     System.out.println(" 1.RUPEE\n 2.DOLLAR\n 3.POUND\n 4.EURO\n 5.SWISS FRANC");
                     toCurrency = sc.nextInt();
@@ -111,6 +113,8 @@ public class Main {
                     }
                     break;
                 case 3:
+                    System.out.println("How much Money you want to convert ?");
+                    amount = sc.nextFloat();
                     System.out.println("To which currency You want to Convert ?");
                     System.out.println(" 1.RUPEE\n 2.DOLLAR\n 3.POUND\n 4.EURO\n 5.SWISS FRANC");
                     toCurrency = sc.nextInt();
@@ -145,6 +149,8 @@ public class Main {
                     }
                     break;
                 case 4:
+                    System.out.println("How much Money you want to convert ?");
+                    amount = sc.nextFloat();
                     System.out.println("To which currency You want to Convert ?");
                     System.out.println(" 1.RUPEE\n 2.DOLLAR\n 3.POUND\n 4.EURO\n 5.SWISS FRANC");
                     toCurrency = sc.nextInt();
@@ -179,6 +185,8 @@ public class Main {
                     }
                     break;
                 case 5:
+                    System.out.println("How much Money you want to convert ?");
+                    amount = sc.nextFloat();
                     System.out.println("To which currency You want to Convert ?");
                     System.out.println(" 1.RUPEE\n 2.DOLLAR\n 3.POUND\n 4.EURO\n 5.SWISS FRANC");
                     toCurrency = sc.nextInt();
