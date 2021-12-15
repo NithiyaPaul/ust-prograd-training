@@ -1,6 +1,5 @@
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.text.DecimalFormat;
 
 public class CurrencyConvertorDefinition implements CurrencyConvertor{
     double CurrencyConvertorDefinition(double amount,String fromUnit,String toUnit){
@@ -113,8 +112,7 @@ public class CurrencyConvertorDefinition implements CurrencyConvertor{
         }
     }
     public double sameToSameCurrency(double amount){
-        DecimalFormat df = new DecimalFormat("#.##");
-        return Float.parseFloat(df.format(amount));
+        return amount;
     }
     public double currencyToHighCurrency(double amount, double value){
         BigDecimal bd = new BigDecimal(amount*value).setScale(2, RoundingMode.HALF_UP);
