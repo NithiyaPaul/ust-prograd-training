@@ -8,9 +8,9 @@ import java.util.*;
 @Component
 @Scope("prototype")
 public class Customer {
-    Map<Integer, List<String>> c_array = new HashMap<Integer, List<String>>();
-    Map<Integer, List<String>> a_array = new HashMap<Integer, List<String>>();
-    Map<Integer, List<String>> temp_array = new HashMap<Integer, List<String>>();
+    Map<Integer, List<String>> c_array = new HashMap<Integer, List<String>>(); // customer array
+    Map<Integer, List<String>> a_array = new HashMap<Integer, List<String>>(); // account array
+    Map<Integer, List<String>> temp_array = new HashMap<Integer, List<String>>(); // temporary array
 
 
     @Autowired
