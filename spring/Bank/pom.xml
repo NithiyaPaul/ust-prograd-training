@@ -37,6 +37,25 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf</artifactId>
+			<version>3.0.14.RELEASE</version>
+		</dependency>
 	</dependencies>
 
 	<build>
