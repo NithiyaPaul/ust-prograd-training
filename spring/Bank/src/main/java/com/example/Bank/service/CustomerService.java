@@ -23,4 +23,8 @@ public class CustomerService {
         return  customerRepository.getById(id);
     }
 
+    public List<Customer> listAll(){
+        return customerRepository.findAll();
+    }
+
 }

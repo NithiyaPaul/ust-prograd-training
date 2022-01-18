@@ -1,11 +1,12 @@
 package com.example.BeansFactory;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController
+@Controller
 public class DisplayBeansFactory {
     private int count;
     private List beansNameList;
@@ -22,5 +23,6 @@ public class DisplayBeansFactory {
         str += "THE NAMES OF EXPLICIT BEANS : " + beansNameList;
         return str;
     }
+
 
 }

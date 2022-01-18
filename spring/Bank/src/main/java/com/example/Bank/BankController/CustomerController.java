@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 import java.util.Objects;
 
 @Controller
@@ -97,6 +98,10 @@ public class CustomerController {
         model.addAttribute("state",customer.getState());
     }
 
+    @RequestMapping("/list")
+    public List<Customer> list(){
+        return service.listAll();
+    }
     @RequestMapping("/Account")
     public String viewCustomerAccountPage() {
         return "Account";
